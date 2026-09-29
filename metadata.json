@@ -1,0 +1,8 @@
+{
+  "name": "JavaScript Foundations — Event Welcome Center",
+  "description": "Lab 5 interactive learning center for JavaScript variables, functions, and console tools.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

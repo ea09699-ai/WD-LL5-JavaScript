@@ -1,349 +1,876 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>JavaScript Foundations — Event Welcome Center</title>
+  <meta name="description" content="Lab 5 interactive learning center for JavaScript variables, functions, and console tools." />
+  <meta property="og:title" content="JavaScript Foundations — Event Welcome Center" />
+  <meta property="og:description" content="Lab 5 interactive learning center for JavaScript variables, functions, and console tools." />
+
   <link rel="stylesheet" href="styles.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
 </head>
+
 <body>
- 
+
   <!-- ── TOP NAV ── -->
+
   <header class="site-header">
+
     <div class="header-inner">
+
       <div class="header-logo">
         <span class="logo-bracket">&lt;</span>JS<span class="logo-bracket">/&gt;</span>
         <span class="logo-label">Foundations</span>
       </div>
+
       <nav class="header-nav">
         <a href="#overview">Overview</a>
         <a href="#demo">Demo</a>
+        <a href="#checkin">Check-In</a>
         <a href="#sprint">Sprint</a>
         <a href="#levelup">Level Up</a>
       </nav>
+
       <div class="header-badge">Lab 5</div>
+
     </div>
+
   </header>
- 
+
+
   <!-- ── HERO ── -->
+
   <section class="hero" id="overview">
+
     <div class="hero-content">
+
       <p class="hero-eyebrow">JavaScript Foundations · Lab 5</p>
-      <h1 class="hero-title">Event Welcome<br><span class="hero-accent">Center</span></h1>
-      <p class="hero-sub">HTML gives websites structure. CSS gives websites style.<br><strong>JavaScript gives websites behavior.</strong></p>
+
+      <h1 class="hero-title">
+        Event Welcome<br>
+        <span class="hero-accent">Center</span>
+      </h1>
+
+      <p class="hero-sub">
+        HTML gives websites structure. CSS gives websites style.<br>
+        <strong>JavaScript gives websites behavior.</strong>
+      </p>
+
       <div class="hero-pills">
         <span class="pill">Variables</span>
         <span class="pill">Functions</span>
         <span class="pill">console.log()</span>
         <span class="pill">alert()</span>
       </div>
+
     </div>
- 
+
+
     <!-- Terminal -->
+
     <div class="terminal" aria-label="Code terminal demo">
+
       <div class="terminal-bar">
+
         <span class="dot dot-red"></span>
         <span class="dot dot-yellow"></span>
         <span class="dot dot-green"></span>
+
         <span class="terminal-title">script.js</span>
+
       </div>
+
       <div class="terminal-body">
-        <div class="terminal-line"><span class="t-comment">// 🎟 Event Welcome Center</span></div>
-        <div class="terminal-line"><span class="t-keyword">let</span> <span class="t-var">attendeeName</span> <span class="t-op">=</span> <span class="t-str">"Jordan"</span><span class="t-punct">;</span></div>
-        <div class="terminal-line"><span class="t-keyword">let</span> <span class="t-var">eventName</span> <span class="t-op">=</span> <span class="t-str">"CodeFest"</span><span class="t-punct">;</span></div>
-        <div class="terminal-line"><span class="t-keyword">let</span> <span class="t-var">roomNumber</span> <span class="t-op">=</span> <span class="t-num">204</span><span class="t-punct">;</span></div>
+
+        <div class="terminal-line">
+          <span class="t-comment">// 🎟 Event Welcome Center</span>
+        </div>
+
+        <div class="terminal-line">
+          <span class="t-keyword">let</span>
+          <span class="t-var">attendeeName</span>
+          <span class="t-op">=</span>
+          <span class="t-str">"Jordan"</span>
+          <span class="t-punct">;</span>
+        </div>
+
+        <div class="terminal-line">
+          <span class="t-keyword">let</span>
+          <span class="t-var">eventName</span>
+          <span class="t-op">=</span>
+          <span class="t-str">"CodeFest"</span>
+          <span class="t-punct">;</span>
+        </div>
+
+        <div class="terminal-line">
+          <span class="t-keyword">let</span>
+          <span class="t-var">roomNumber</span>
+          <span class="t-op">=</span>
+          <span class="t-num">204</span>
+          <span class="t-punct">;</span>
+        </div>
+
         <div class="terminal-line">&nbsp;</div>
-        <div class="terminal-line"><span class="t-fn">function</span> <span class="t-fnname">welcomeGuest</span><span class="t-punct">() {</span></div>
-        <div class="terminal-line">&nbsp; <span class="t-obj">console</span><span class="t-punct">.</span><span class="t-method">log</span><span class="t-punct">(</span><span class="t-str">"Welcome to "</span> <span class="t-op">+</span> <span class="t-var">eventName</span><span class="t-punct">);</span></div>
-        <div class="terminal-line"><span class="t-punct">}</span></div>
+
+        <div class="terminal-line">
+          <span class="t-fn">function</span>
+          <span class="t-fnname">welcomeGuest</span>
+          <span class="t-punct">() {</span>
+        </div>
+
+        <div class="terminal-line">
+          &nbsp;
+          <span class="t-obj">console</span>
+          <span class="t-punct">.</span>
+          <span class="t-method">log</span>
+          <span class="t-punct">(</span>
+          <span class="t-str">"Welcome to "</span>
+          <span class="t-op">+</span>
+          <span class="t-var">eventName</span>
+          <span class="t-punct">);</span>
+        </div>
+
+        <div class="terminal-line">
+          <span class="t-punct">}</span>
+        </div>
+
         <div class="terminal-line">&nbsp;</div>
-        <div class="terminal-line"><span class="t-fnname">welcomeGuest</span><span class="t-punct">();</span> <span class="t-comment">// ← call it!</span></div>
+
+        <div class="terminal-line">
+          <span class="t-fnname">welcomeGuest</span>
+          <span class="t-punct">();</span>
+          <span class="t-comment">// ← call it!</span>
+        </div>
+
         <div class="terminal-cursor"></div>
+
       </div>
+
       <div class="terminal-console">
+
         <span class="console-label">Console</span>
-        <span class="console-output" id="console-output">Welcome to CodeFest</span>
+
+        <span class="console-output" id="console-output">
+          Welcome to CodeFest
+        </span>
+
       </div>
+
     </div>
+
   </section>
- 
+
+
   <!-- ── OBJECTIVES ── -->
+
   <section class="objectives-band">
+
     <div class="container">
+
       <h2 class="band-title">What You'll Learn Today</h2>
+
       <div class="objectives-grid">
+
         <div class="obj-card">
           <div class="obj-icon">📁</div>
           <p>Create &amp; link a <code>script.js</code> file to a webpage</p>
         </div>
+
         <div class="obj-card">
           <div class="obj-icon">📦</div>
           <p>Use <strong>variables</strong> to store information</p>
         </div>
+
         <div class="obj-card">
           <div class="obj-icon">🔤</div>
           <p>Work with <strong>strings</strong> and <strong>numbers</strong></p>
         </div>
+
         <div class="obj-card">
           <div class="obj-icon">⚙️</div>
           <p>Create and call simple <strong>functions</strong></p>
         </div>
+
         <div class="obj-card">
           <div class="obj-icon">🔍</div>
           <p>Use <strong>console tools</strong> for testing &amp; debugging</p>
         </div>
+
         <div class="obj-card">
           <div class="obj-icon">🎟</div>
           <p>Apply fundamentals to a <strong>real-world scenario</strong></p>
         </div>
+
       </div>
+
     </div>
+
   </section>
- 
-  <!-- ── SETUP DEMO ── -->
-  <section class="section-block" id="demo">
-    <div class="container two-col">
-      <div class="section-text">
-        <p class="section-eyebrow">Step-by-Step Setup</p>
-        <h2 class="section-title">Wiring JavaScript<br>Into Your Page</h2>
-        <p class="section-body">Before you write a single line of logic, you need JavaScript connected to your HTML. Follow these steps every time you start a new project.</p>
- 
-        <ol class="setup-steps">
-          <li>
-            <div class="step-num">01</div>
-            <div class="step-info">
-              <strong>Create the file</strong>
-              <p>Make a new file named <code>script.js</code> in your project folder.</p>
-            </div>
-          </li>
-          <li>
-            <div class="step-num">02</div>
-            <div class="step-info">
-              <strong>Link it in HTML</strong>
-              <p>Add the script tag just before the closing <code>&lt;/body&gt;</code> tag.</p>
-            </div>
-          </li>
-          <li>
-            <div class="step-num">03</div>
-            <div class="step-info">
-              <strong>Verify the connection</strong>
-              <p>Open DevTools → Console and confirm your message appears.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
- 
-      <div class="code-stack">
-        <div class="code-card">
-          <div class="code-card-label">index.html</div>
-          <pre><code><span class="t-tag">&lt;body&gt;</span>
-  <span class="t-comment">&lt;!-- your HTML here --&gt;</span>
- 
-  <span class="t-tag">&lt;script</span> <span class="t-attr">src</span><span class="t-op">=</span><span class="t-str">"script.js"</span><span class="t-tag">&gt;&lt;/script&gt;</span>
-<span class="t-tag">&lt;/body&gt;</span></code></pre>
-        </div>
-        <div class="code-card">
-          <div class="code-card-label">script.js</div>
-          <pre><code><span class="t-obj">console</span><span class="t-punct">.</span><span class="t-method">log</span><span class="t-punct">(</span><span class="t-str">"Welcome to CodeFest!"</span><span class="t-punct">);</span></code></pre>
-        </div>
- 
-        <div class="callout-box">
-          <span class="callout-icon">⚠️</span>
-          <div>
-            <strong>Common Gotchas</strong>
-            <ul>
-              <li>Script tag must go before <code>&lt;/body&gt;</code></li>
-              <li>Filename must match exactly — case-sensitive</li>
-              <li>Always save before refreshing</li>
-              <li>Refresh the browser to see changes</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-  <!-- ── SPRINT CHALLENGES ── -->
-  <section class="sprint-section" id="sprint">
+
+
+  <!-- ======================================================
+       EVENT CHECK-IN
+       ====================================================== -->
+
+  <section class="checkin-section" id="checkin">
+
     <div class="container">
-      <div class="sprint-header">
-        <p class="section-eyebrow">30-Minute Sprint</p>
-        <h2 class="section-title">Build the Event Welcome Center</h2>
-        <p class="section-body sprint-intro">You're helping organize a large university technology conference. Attendees are arriving and you need a system that stores information and displays messages. Work through each challenge below.</p>
+
+      <div class="checkin-header">
+
+        <p class="section-eyebrow">Interactive Challenge</p>
+
+        <h2 class="section-title">
+          Event Check-In Center
+        </h2>
+
+        <p class="section-body">
+          Enter an attendee's name and check them into CodeFest.
+          JavaScript will update the greeting, attendee count,
+          and progress.
+        </p>
+
       </div>
- 
-      <div class="challenges-grid">
- 
-        <!-- Challenge 1 -->
-        <div class="challenge-card">
-          <div class="challenge-header">
-            <span class="challenge-num">01</span>
-            <h3>Event Information</h3>
-          </div>
-          <p>Create variables for your event and display each value with <code>console.log()</code>.</p>
-          <pre><code><span class="t-keyword">let</span> <span class="t-var">eventName</span> <span class="t-op">=</span> <span class="t-str">"CodeFest"</span><span class="t-punct">;</span>
-<span class="t-keyword">let</span> <span class="t-var">speakerName</span> <span class="t-op">=</span> <span class="t-str">"Dr. Kim"</span><span class="t-punct">;</span>
-<span class="t-keyword">let</span> <span class="t-var">roomNumber</span> <span class="t-op">=</span> <span class="t-num">204</span><span class="t-punct">;</span>
-<span class="t-keyword">let</span> <span class="t-var">attendeeName</span> <span class="t-op">=</span> <span class="t-str">"Jordan"</span><span class="t-punct">;</span>
- 
-<span class="t-obj">console</span><span class="t-punct">.</span><span class="t-method">log</span><span class="t-punct">(</span><span class="t-var">eventName</span><span class="t-punct">);</span></code></pre>
+
+
+      <div class="checkin-card">
+
+        <div class="checkin-input-area">
+
+          <label for="attendeeName">
+            Attendee Name
+          </label>
+
+          <input
+            type="text"
+            id="attendeeName"
+            placeholder="Enter your name"
+          />
+
+          <button id="checkInButton">
+            Check In
+          </button>
+
         </div>
- 
-        <!-- Challenge 2 -->
-        <div class="challenge-card">
-          <div class="challenge-header">
-            <span class="challenge-num">02</span>
-            <h3>Personalized Greetings</h3>
-          </div>
-          <p>Combine variables and strings to create custom welcome messages.</p>
-          <pre><code><span class="t-obj">console</span><span class="t-punct">.</span><span class="t-method">log</span><span class="t-punct">(</span>
-  <span class="t-str">"Welcome "</span> <span class="t-op">+</span> <span class="t-var">attendeeName</span>
-  <span class="t-op">+</span> <span class="t-str">" to "</span> <span class="t-op">+</span> <span class="t-var">eventName</span> <span class="t-op">+</span> <span class="t-str">"!"</span>
-<span class="t-punct">);</span>
- 
-<span class="t-obj">console</span><span class="t-punct">.</span><span class="t-method">log</span><span class="t-punct">(</span>
-  <span class="t-str">"Your session is in Room "</span>
-  <span class="t-op">+</span> <span class="t-var">roomNumber</span> <span class="t-op">+</span> <span class="t-str">"."</span>
-<span class="t-punct">);</span></code></pre>
-        </div>
- 
-        <!-- Challenge 3 -->
-        <div class="challenge-card">
-          <div class="challenge-header">
-            <span class="challenge-num">03</span>
-            <h3>Build Functions</h3>
-          </div>
-          <p>Wrap your messages inside functions and call them. Create at least two.</p>
-          <pre><code><span class="t-fn">function</span> <span class="t-fnname">welcomeGuest</span><span class="t-punct">() {</span>
-  <span class="t-obj">console</span><span class="t-punct">.</span><span class="t-method">log</span><span class="t-punct">(</span><span class="t-str">"Welcome to "</span> <span class="t-op">+</span> <span class="t-var">eventName</span><span class="t-punct">);</span>
-<span class="t-punct">}</span>
- 
-<span class="t-fn">function</span> <span class="t-fnname">displaySessionInfo</span><span class="t-punct">() {</span>
-  <span class="t-obj">console</span><span class="t-punct">.</span><span class="t-method">log</span><span class="t-punct">(</span><span class="t-str">"Room: "</span> <span class="t-op">+</span> <span class="t-var">roomNumber</span><span class="t-punct">);</span>
-<span class="t-punct">}</span>
- 
-<span class="t-fnname">welcomeGuest</span><span class="t-punct">();</span>
-<span class="t-fnname">displaySessionInfo</span><span class="t-punct">();</span></code></pre>
-        </div>
- 
-        <!-- Challenge 4 -->
-        <div class="challenge-card">
-          <div class="challenge-header">
-            <span class="challenge-num">04</span>
-            <h3>Alert Messages</h3>
-          </div>
-          <p>Use <code>alert()</code> to send messages directly to the user. Notice how it differs from <code>console.log()</code>.</p>
-          <pre><code><span class="t-comment">// User sees this — not just the console</span>
-<span class="t-method">alert</span><span class="t-punct">(</span><span class="t-str">"Welcome to CodeFest!"</span><span class="t-punct">);</span>
- 
-<span class="t-method">alert</span><span class="t-punct">(</span>
-  <span class="t-str">"Session starts in Room "</span> <span class="t-op">+</span> <span class="t-var">roomNumber</span>
-<span class="t-punct">);</span></code></pre>
-          <div class="challenge-tip">
-            <span>💡</span> <span>Add one alert per team member and watch the browser behavior.</span>
-          </div>
-        </div>
- 
-        <!-- Challenge 5 -->
-        <div class="challenge-card challenge-card--wide">
-          <div class="challenge-header">
-            <span class="challenge-num">05</span>
-            <h3>Attendee Counter</h3>
-          </div>
-          <div class="wide-split">
+
+
+        <div class="checkin-results">
+
+          <div class="result-box">
+
+            <span class="result-icon">👋</span>
+
             <div>
-              <p>Track how many attendees have checked in using a counter variable. Use <code>++</code> to increase the count.</p>
-              <div class="challenge-tip">
-                <span>💬</span>
-                <span><strong>Discussion:</strong> Why might event organizers need attendance counts? Think about fire codes, catering, and planning.</span>
-              </div>
+              <span class="result-label">Greeting</span>
+
+              <p id="greeting">
+                Welcome to CodeFest!
+              </p>
             </div>
-            <pre><code><span class="t-keyword">let</span> <span class="t-var">attendeeCount</span> <span class="t-op">=</span> <span class="t-num">0</span><span class="t-punct">;</span>
- 
-<span class="t-obj">console</span><span class="t-punct">.</span><span class="t-method">log</span><span class="t-punct">(</span><span class="t-str">"Count: "</span> <span class="t-op">+</span> <span class="t-var">attendeeCount</span><span class="t-punct">);</span>
- 
-<span class="t-var">attendeeCount</span><span class="t-op">++</span><span class="t-punct">;</span>
-<span class="t-obj">console</span><span class="t-punct">.</span><span class="t-method">log</span><span class="t-punct">(</span><span class="t-str">"Count: "</span> <span class="t-op">+</span> <span class="t-var">attendeeCount</span><span class="t-punct">);</span>
- 
-<span class="t-var">attendeeCount</span><span class="t-op">++</span><span class="t-punct">;</span>
-<span class="t-obj">console</span><span class="t-punct">.</span><span class="t-method">log</span><span class="t-punct">(</span><span class="t-str">"Count: "</span> <span class="t-op">+</span> <span class="t-var">attendeeCount</span><span class="t-punct">);</span></code></pre>
+
           </div>
+
+
+          <div class="result-box">
+
+            <span class="result-icon">🎟️</span>
+
+            <div>
+              <span class="result-label">Attendance</span>
+
+              <p id="count">
+                Attendees checked in: 0
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="result-box">
+
+            <span class="result-icon">📊</span>
+
+            <div class="progress-area">
+
+              <span class="result-label">Progress</span>
+
+              <p id="progress">
+                Check-in progress: 0%
+              </p>
+
+              <div class="progress-bar">
+
+                <div
+                  class="progress-fill"
+                  id="progressFill"
+                ></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
- 
+
       </div>
+
     </div>
+
   </section>
- 
+
+
+  <!-- ── SETUP DEMO ── -->
+
+  <section class="section-block" id="demo">
+
+    <div class="container two-col">
+
+      <div class="section-text">
+
+        <p class="section-eyebrow">
+          Step-by-Step Setup
+        </p>
+
+        <h2 class="section-title">
+          Wiring JavaScript<br>
+          Into Your Page
+        </h2>
+
+        <p class="section-body">
+          Before you write a single line of logic, you need JavaScript
+          connected to your HTML. Follow these steps every time you
+          start a new project.
+        </p>
+
+        <ol class="setup-steps">
+
+          <li>
+
+            <div class="step-num">01</div>
+
+            <div class="step-info">
+
+              <strong>Create the file</strong>
+
+              <p>
+                Make a new file named <code>script.js</code>
+                in your project folder.
+              </p>
+
+            </div>
+
+          </li>
+
+          <li>
+
+            <div class="step-num">02</div>
+
+            <div class="step-info">
+
+              <strong>Link it in HTML</strong>
+
+              <p>
+                Add the script tag just before the closing
+                <code>&lt;/body&gt;</code> tag.
+              </p>
+
+            </div>
+
+          </li>
+
+          <li>
+
+            <div class="step-num">03</div>
+
+            <div class="step-info">
+
+              <strong>Verify the connection</strong>
+
+              <p>
+                Open DevTools → Console and confirm your
+                message appears.
+              </p>
+
+            </div>
+
+          </li>
+
+        </ol>
+
+      </div>
+
+
+      <div class="code-stack">
+
+        <div class="code-card">
+
+          <div class="code-card-label">
+            index.html
+          </div>
+
+          <pre><code>&lt;body&gt;
+  &lt;!-- your HTML here --&gt;
+
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre>
+
+        </div>
+
+
+        <div class="code-card">
+
+          <div class="code-card-label">
+            script.js
+          </div>
+
+          <pre><code>console.log("Welcome to CodeFest!");</code></pre>
+
+        </div>
+
+
+        <div class="callout-box">
+
+          <span class="callout-icon">⚠️</span>
+
+          <div>
+
+            <strong>Common Gotchas</strong>
+
+            <ul>
+
+              <li>
+                Script tag must go before
+                <code>&lt;/body&gt;</code>
+              </li>
+
+              <li>
+                Filename must match exactly — case-sensitive
+              </li>
+
+              <li>
+                Always save before refreshing
+              </li>
+
+              <li>
+                Refresh the browser to see changes
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ── SPRINT CHALLENGES ── -->
+
+  <section class="sprint-section" id="sprint">
+
+    <div class="container">
+
+      <div class="sprint-header">
+
+        <p class="section-eyebrow">
+          30-Minute Sprint
+        </p>
+
+        <h2 class="section-title">
+          Build the Event Welcome Center
+        </h2>
+
+        <p class="section-body sprint-intro">
+          You're helping organize a large university technology
+          conference. Attendees are arriving and you need a system
+          that stores information and displays messages.
+          Work through each challenge below.
+        </p>
+
+      </div>
+
+
+      <div class="challenges-grid">
+
+
+        <!-- Challenge 1 -->
+
+        <div class="challenge-card">
+
+          <div class="challenge-header">
+
+            <span class="challenge-num">01</span>
+
+            <h3>Event Information</h3>
+
+          </div>
+
+          <p>
+            Create variables for your event and display each
+            value with <code>console.log()</code>.
+          </p>
+
+          <pre><code>let eventName = "CodeFest";
+let speakerName = "Dr. Kim";
+let roomNumber = 204;
+let attendeeName = "Jordan";
+
+console.log(eventName);</code></pre>
+
+        </div>
+
+
+        <!-- Challenge 2 -->
+
+        <div class="challenge-card">
+
+          <div class="challenge-header">
+
+            <span class="challenge-num">02</span>
+
+            <h3>Personalized Greetings</h3>
+
+          </div>
+
+          <p>
+            Combine variables and strings to create custom
+            welcome messages.
+          </p>
+
+          <pre><code>console.log(
+  "Welcome " + attendeeName
+  + " to " + eventName + "!"
+);
+
+console.log(
+  "Your session is in Room "
+  + roomNumber + "."
+);</code></pre>
+
+        </div>
+
+
+        <!-- Challenge 3 -->
+
+        <div class="challenge-card">
+
+          <div class="challenge-header">
+
+            <span class="challenge-num">03</span>
+
+            <h3>Build Functions</h3>
+
+          </div>
+
+          <p>
+            Wrap your messages inside functions and call them.
+            Create at least two.
+          </p>
+
+          <pre><code>function welcomeGuest() {
+  console.log("Welcome to " + eventName);
+}
+
+function displaySessionInfo() {
+  console.log("Room: " + roomNumber);
+}
+
+welcomeGuest();
+displaySessionInfo();</code></pre>
+
+        </div>
+
+
+        <!-- Challenge 4 -->
+
+        <div class="challenge-card">
+
+          <div class="challenge-header">
+
+            <span class="challenge-num">04</span>
+
+            <h3>Alert Messages</h3>
+
+          </div>
+
+          <p>
+            Use <code>alert()</code> to send messages directly
+            to the user.
+          </p>
+
+          <pre><code>alert("Welcome to CodeFest!");
+
+alert(
+  "Session starts in Room "
+  + roomNumber
+);</code></pre>
+
+        </div>
+
+
+        <!-- Challenge 5 -->
+
+        <div class="challenge-card challenge-card--wide">
+
+          <div class="challenge-header">
+
+            <span class="challenge-num">05</span>
+
+            <h3>Attendee Counter</h3>
+
+          </div>
+
+          <div class="wide-split">
+
+            <div>
+
+              <p>
+                Track how many attendees have checked in using
+                a counter variable. Use <code>++</code> to
+                increase the count.
+              </p>
+
+              <div class="challenge-tip">
+
+                <span>💬</span>
+
+                <span>
+                  <strong>Discussion:</strong>
+                  Why might event organizers need attendance
+                  counts? Think about fire codes, catering,
+                  and planning.
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <pre><code>let attendeeCount = 0;
+
+console.log("Count: " + attendeeCount);
+
+attendeeCount++;
+
+console.log("Count: " + attendeeCount);
+
+attendeeCount++;
+
+console.log("Count: " + attendeeCount);</code></pre>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
   <!-- ── LEVEL UP ── -->
+
   <section class="section-block levelup-section" id="levelup">
+
     <div class="container">
-      <p class="section-eyebrow">Finished Early?</p>
-      <h2 class="section-title">🚀 Level Up Challenges</h2>
- 
+
+      <p class="section-eyebrow">
+        Finished Early?
+      </p>
+
+      <h2 class="section-title">
+        🚀 Level Up Challenges
+      </h2>
+
+
       <div class="levelup-grid">
+
         <div class="levelup-card">
+
           <div class="lu-num">LU 1</div>
+
           <h4>More Functions</h4>
-          <p>Create <code>displaySpeaker()</code>, <code>displayRoom()</code>, and <code>displayAgenda()</code> functions.</p>
+
+          <p>
+            Create <code>displaySpeaker()</code>,
+            <code>displayRoom()</code>, and
+            <code>displayAgenda()</code> functions.
+          </p>
+
         </div>
+
+
         <div class="levelup-card">
+
           <div class="lu-num">LU 2</div>
+
           <h4>Multiple Attendees</h4>
-          <p>Create variables for several attendees and generate a personalized welcome message for each one.</p>
+
+          <p>
+            Create variables for several attendees and
+            generate a personalized welcome message
+            for each one.
+          </p>
+
         </div>
+
+
         <div class="levelup-card">
+
           <div class="lu-num">LU 3</div>
+
           <h4>Mini Dashboard</h4>
-          <p>Build a mini conference dashboard using only variables, functions, and <code>console.log()</code>.</p>
+
+          <p>
+            Build a mini conference dashboard using only
+            variables, functions, and
+            <code>console.log()</code>.
+          </p>
+
         </div>
+
+
         <div class="levelup-card">
+
           <div class="lu-num">LU 4</div>
+
           <h4>Explore MDN</h4>
-          <p>Look up one new console method and demonstrate it. Try <code>console.warn()</code>, <code>console.table()</code>, or <code>console.info()</code>.</p>
+
+          <p>
+            Look up one new console method and demonstrate it.
+            Try <code>console.warn()</code>,
+            <code>console.table()</code>, or
+            <code>console.info()</code>.
+          </p>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
- 
+
+
   <!-- ── KEY TAKEAWAYS ── -->
+
   <section class="takeaways-section">
+
     <div class="container">
-      <h2 class="section-title">Key Takeaways</h2>
+
+      <h2 class="section-title">
+        Key Takeaways
+      </h2>
+
+
       <div class="takeaways-grid">
+
         <div class="takeaway">
+
           <div class="takeaway-icon">⚡</div>
-          <p><strong>JavaScript powers interactivity</strong> — buttons, games, forms, and apps.</p>
+
+          <p>
+            <strong>JavaScript powers interactivity</strong>
+            — buttons, games, forms, and apps.
+          </p>
+
         </div>
+
+
         <div class="takeaway">
+
           <div class="takeaway-icon">📦</div>
-          <p><strong>Variables store information</strong> so you can reuse it throughout your code.</p>
+
+          <p>
+            <strong>Variables store information</strong>
+            so you can reuse them throughout your code.
+          </p>
+
         </div>
+
+
         <div class="takeaway">
+
           <div class="takeaway-icon">⚙️</div>
-          <p><strong>Functions organize behavior</strong> into reusable, named blocks.</p>
+
+          <p>
+            <strong>Functions organize behavior</strong>
+            into reusable, named blocks.
+          </p>
+
         </div>
+
+
         <div class="takeaway">
+
           <div class="takeaway-icon">🔍</div>
-          <p><strong>Console tools help you debug</strong> — your best friend as a developer.</p>
+
+          <p>
+            <strong>Console tools help you debug</strong>
+            — your best friend as a developer.
+          </p>
+
         </div>
+
       </div>
- 
+
+
       <div class="closing-message">
-        <p>Every interactive application starts with the fundamentals you practiced today.</p>
+
+        <p>
+          Every interactive application starts with the
+          fundamentals you practiced today.
+        </p>
+
       </div>
+
     </div>
+
   </section>
- 
+
+
+  <!-- ── FOOTER ── -->
+
   <footer class="site-footer">
+
     <div class="container footer-inner">
-      <span class="footer-logo"><span class="logo-bracket">&lt;</span>JS<span class="logo-bracket">/&gt;</span> Foundations</span>
-      <span class="footer-note">Lab 5 · Event Welcome Center · 70 Minutes</span>
+
+      <span class="footer-logo">
+        <span class="logo-bracket">&lt;</span>JS
+        <span class="logo-bracket">/&gt;</span>
+        Foundations
+      </span>
+
+      <span class="footer-note">
+        Lab 5 · Event Welcome Center · 70 Minutes
+      </span>
+
     </div>
+
   </footer>
- 
- 
+
+
+  <!-- JavaScript -->
+
+  <script src="script.js"></script>
+
 </body>
+
 </html>
